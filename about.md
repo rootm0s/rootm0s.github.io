@@ -4,11 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Security researchers and developers.
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+Security researcher and developer.
 
 ### Contact me
 
