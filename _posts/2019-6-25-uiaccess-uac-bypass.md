@@ -34,5 +34,3 @@ In order for a successful build, install the py2exe (http://www.py2exe.org) modu
 
 #### Creds to:
 https://tyranidslair.blogspot.com/2019/02/accessing-access-tokens-for-uiaccess.html
-
-![_config.yml]({{ site.baseurl }}/images/config.png)
