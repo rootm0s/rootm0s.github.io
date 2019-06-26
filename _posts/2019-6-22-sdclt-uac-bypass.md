@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SDCLT UAC BYPASS (Class hijacking)
+title: SDCLT UAC BYPASS
 ---
 
 This executable is running elevated by default. Since sdclt executable is vulnerable to
