@@ -1,6 +1,6 @@
 ---
 layout: post
-title: WSReset UAC bypass
+title: WSRESET UAC BYPASS
 ---
 
 This executable is running elevated by default. Since WSReset executable is vulnerable to
