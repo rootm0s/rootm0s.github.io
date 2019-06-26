@@ -4,8 +4,7 @@ title: SDCLT UAC BYPASS (App Paths)
 ---
 
 This executable is running elevated by default. Since sdclt executable is vulnerable to
-registry App Path hijacking, it can be used to spawn our executable with High IL. We need to hijack the default
-value at "HKCU\Software\Microsoft\Windows\CurrentVersion\\App Paths\control.exe" with path to executable to be launched.
+registry App Path hijacking, it can be used to spawn our executable with High IL. We need to hijack the default value at "HKCU\Software\Microsoft\Windows\CurrentVersion\\App Paths\control.exe" with full path to our executable.
 
 This works from Windows 10 (10240) to Windows 10 (16215)
 
