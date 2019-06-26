@@ -1,6 +1,6 @@
 ---
 layout: post
-title: WSRESET UAC BYPASS (Class hijacking)
+title: WSRESET UAC BYPASS
 ---
 
 This executable is running elevated by default. Since WSReset executable is vulnerable to
