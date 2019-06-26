@@ -14,4 +14,4 @@ This works from Windows 10 (10240) to *Unfixed*
 [https://github.com/rootm0s/WinPwnage/blob/master/winpwnage/functions/uac/uac_fodhelper.py](https://github.com/rootm0s/WinPwnage/blob/master/winpwnage/functions/uac/uac_fodhelper.py)
 
 ### WinPwnage usage:
-´python winpwnage.py --use uac --id 2 --payload c:\\windows\\system32\\cmd.exe´
+`python winpwnage.py --use uac --id 2 --payload c:\\windows\\system32\\cmd.exe`
