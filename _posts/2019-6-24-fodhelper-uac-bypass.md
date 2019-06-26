@@ -1,6 +1,6 @@
 ---
 layout: post
-title: FODHELPER UAC BYPASS
+title: FODHELPER UAC BYPASS (Class hijacking)
 ---
 
 This executable is running elevated by default. Since fodhelper executable is vulnerable to
