@@ -4,9 +4,7 @@ title: SDCLT UAC BYPASS
 ---
 
 This executable is running elevated by default. Since sdclt executable is vulnerable to
-class hijacking, it can be used to spawn our executable with High IL. We need to hijack the default
-value at "HKCU\Software\Classes\Folder\shell\open\command" and create a new string value with the
-name DelegateExecute set to 0.
+class hijacking, it can be used to spawn our executable with High IL. We need to hijack the default value at "HKCU\Software\Classes\Folder\shell\open\command" with full path to our executable and create a new string value with the name DelegateExecute set to 0.
 
 This works from Windows 10 (14393) to *Unfixed*
 
