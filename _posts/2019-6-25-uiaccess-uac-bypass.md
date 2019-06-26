@@ -1,6 +1,6 @@
 ---
 layout: post
-title: UIACCESS UAC BYPASS (Token duplication)
+title: UIACCESS UAC BYPASS
 ---
 
 In these examples, we start a host process (msra.exe) that we steal the UIAccess token from. We downgrade the token IL from Medium+ to Medium. We use the token to spawn a new process (uihack.exe) with the UIAccess flag, we can now send keyboard events to the elevated processes.
