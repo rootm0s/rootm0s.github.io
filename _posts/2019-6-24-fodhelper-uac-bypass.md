@@ -11,7 +11,7 @@ This executable is vulnerable to class hijacking, it can be used to spawn our ex
 
 Once we created all the registry keys and values we can run fodhelper executable in order to trigger the UAC bypass. 
 
-This works from Windows 10 (10240) to *Unfixed*
+This works from Windows 10 (10240) to **Unfixed**
 
 ### Full code at WinPwnage project:
 [https://github.com/rootm0s/WinPwnage/blob/master/winpwnage/functions/uac/uac_fodhelper.py](https://github.com/rootm0s/WinPwnage/blob/master/winpwnage/functions/uac/uac_fodhelper.py)
