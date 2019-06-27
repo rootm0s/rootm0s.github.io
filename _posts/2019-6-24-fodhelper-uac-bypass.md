@@ -9,6 +9,8 @@ This executable is vulnerable to class hijacking, it can be used to spawn our ex
 
 ![_config.yml]({{ site.baseurl }}/images/fodhelper_procmon.JPG)
 
+Once we created all the registry keys and values we can run fodhelper executable in order to trigger the UAC bypass. 
+
 This works from Windows 10 (10240) to *Unfixed*
 
 ### Full code at WinPwnage project:
