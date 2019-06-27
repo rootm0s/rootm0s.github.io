@@ -11,6 +11,8 @@ This executable is vulnerable to class hijacking, it can be used to spawn our ex
 
 Once we created all the registry keys and values we can run WSReset executable in order to trigger the UAC bypass. WSReset has to finish loading, can take a few seconds before the high IL process is created.
 
+![_config.yml]({{ site.baseurl }}/images/wsreset_cmd_pop.JPG)
+
 Tested on Windows 10 (17134)
 
 ### Full code at WinPwnage project:
