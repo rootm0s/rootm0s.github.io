@@ -1,4 +1,7 @@
 ---
+vimeoId: 344744930
+---
+---
 layout: post
 title: UIACCESS UAC BYPASS
 ---
@@ -8,6 +11,9 @@ In these examples, we start a host process (msra.exe) that we steal the UIAccess
 Not designed to be stealthy, but it's for sure possible! This is a demo in Python, just to display how it works.
 
 You need to build the uihack python file to an executable, make sure it stays in dist folder. Once you created the uihack executable, you can launch uiap.py from a non-elevated command prompt.
+
+### Preview:
+{% include vimeo.html id=page.vimeoId %}
 
 Here's a few methods, showing how hijacking UIAccess tokens can be used to bypass UAC.
 
