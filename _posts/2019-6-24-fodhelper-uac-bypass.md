@@ -7,7 +7,7 @@ Fodhelper is a auto-elevated executable, which is signed by Microsoft. Fodhelper
 
 This executable is vulnerable to class hijacking, it can be used to spawn our executable with High IL. We need to hijack the default value at "HKCU\Software\Classes\ms-settings\shell\open\command" with full path to our executable and create a new string value with the name DelegateExecute set to 0.
 
-![_config.yml]({{ site.baseurl }}/images/fodhelper_procmon.jpg)
+![_config.yml]({{ site.baseurl }}/images/fodhelper_procmon.JPG)
 
 This works from Windows 10 (10240) to *Unfixed*
 
