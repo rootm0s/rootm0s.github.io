@@ -109,5 +109,5 @@ else:
 	print "[+] Created process PID: {pid} using CreateProcessAsUserA".format(pid=lpProcessInformation.dwProcessId)
 ```
 
-Full code can be found here, with payload example to send keyboard events
-* https://github.com/rootm0s/UIAP
+Full code can be found here, with payload (uihack.py) example to send keyboard events to High IL processes.
+* [https://github.com/rootm0s/UIAP](https://github.com/rootm0s/UIAP)
