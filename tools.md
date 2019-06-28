@@ -4,6 +4,16 @@ title: Tools
 permalink: /tools/
 ---
 
+### Sysinternals Sigcheck
+*Sigcheck is a command-line utility that shows file version number, timestamp information, and digital signature details, including certificate chains. It also includes an option to check a file’s status on [VirusTotal](https://www.virustotal.com), a site that performs automated file scanning against over 40 antivirus engines, and an option to upload a file for scanning.*
+
+* [https://docs.microsoft.com/en-us/sysinternals/downloads/sigcheck](https://docs.microsoft.com/en-us/sysinternals/downloads/sigcheck)
+
+### Sysinternals ListDLLs
+*ListDLLs is a utility that reports the DLLs loaded into processes. You can use it to list all DLLs loaded into all processes, into a specific process, or to list the processes that have a particular DLL loaded. ListDLLs can also display full version information for DLLs, including their digital signature, and can be used to scan processes for unsigned DLLs.*
+
+* [https://docs.microsoft.com/en-us/sysinternals/downloads/listdlls](https://docs.microsoft.com/en-us/sysinternals/downloads/listdlls)
+
 ### Sysinternals Process Monitor
 *Process Monitor is an advanced monitoring tool for Windows that shows real-time file system, Registry and process/thread activity. It combines the features of two legacy Sysinternals utilities, Filemon and Regmon, and adds an extensive list of enhancements including rich and non-destructive filtering, comprehensive event properties such session IDs and user names, reliable process information, full thread stacks with integrated symbol support for each operation, simultaneous logging to a file, and much more. Its uniquely powerful features will make Process Monitor a core utility in your system troubleshooting and malware hunting toolkit.*
 
