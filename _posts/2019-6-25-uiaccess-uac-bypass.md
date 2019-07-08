@@ -17,7 +17,7 @@ Here's a few methods, showing how hijacking UIAccess tokens can be used to bypas
 
 ### Rstrui method:
 
-This executable is running elevated by default. Since rstrui executable is vulnerable to class hijacking, we use that to spawn our executable which is defined inside uihack file. In order to trigger the hijack, we need to send keyboard events to the window. Upon success, a elevated console window or custom executable should appear.
+This executable is running elevated by default. Since rstrui executable is vulnerable to class hijacking, we use that to spawn our executable which is defined inside uihack file. In order to trigger the hijack, we need to send keyboard events to the window. Upon success, a elevated console window or custom executable should appear. Read more here [https://rootm0s.github.io/researching-rstrui-process/](https://rootm0s.github.io/researching-rstrui-process/)
 
 ### Taskmgr method:
 
