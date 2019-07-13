@@ -37,7 +37,7 @@ In order for a successful build, install the py2exe (http://www.py2exe.org) modu
 `python build.py uihack.py`
 
 ### Full code here:
-[https://github.com/rootm0s/UIAP](https://github.com/rootm0s/UIAP)
+[https://github.com/rootm0s/UUB](https://github.com/rootm0s/UUB)
 
 #### Creds to:
 [https://tyranidslair.blogspot.com/2019/02/accessing-access-tokens-for-uiaccess.html](https://tyranidslair.blogspot.com/2019/02/accessing-access-tokens-for-uiaccess.html)
