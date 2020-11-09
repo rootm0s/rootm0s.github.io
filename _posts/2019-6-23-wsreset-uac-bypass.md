@@ -16,7 +16,7 @@ Once we created all the registry keys and values we can run WSReset executable i
 Tested on Windows 10 (17134)
 
 ### Full code at WinPwnage project:
-[https://github.com/rootm0s/WinPwnage/blob/master/winpwnage/functions/uac/uac_wsreset.py](https://github.com/rootm0s/WinPwnage/blob/master/winpwnage/functions/uac/uac_wsreset.py)
+[https://github.com/rootm0s/WinPwnage/blob/master/winpwnage/functions/uac/uacMethod14.py](https://github.com/rootm0s/WinPwnage/blob/master/winpwnage/functions/uac/uacMethod14.py)
 
 ### WinPwnage usage:
-`python winpwnage.py --use uac --id 20 --payload c:\\windows\\system32\\cmd.exe`
+`python winpwnage.py --use uac --id 14 --payload c:\\windows\\system32\\cmd.exe`
