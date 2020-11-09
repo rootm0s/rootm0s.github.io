@@ -9,7 +9,7 @@ registry App Path hijacking, it can be used to spawn our executable with High IL
 This works from Windows 10 (10240) to Windows 10 (16215)
 
 ### Full code at WinPwnage project:
-[https://github.com/rootm0s/WinPwnage/blob/master/winpwnage/functions/uac/uac_sdcltcontrol.py](https://github.com/rootm0s/WinPwnage/blob/master/winpwnage/functions/uac/uac_sdcltcontrol.py)
+[https://github.com/rootm0s/WinPwnage/blob/master/winpwnage/functions/uac/uacMethod6.py](https://github.com/rootm0s/WinPwnage/blob/master/winpwnage/functions/uac/uacMethod6.py)
 
 ### WinPwnage usage:
 `python winpwnage.py --use uac --id 6 --payload c:\\windows\\system32\\cmd.exe`
