@@ -16,7 +16,7 @@ Once we created all the registry keys and values we can run fodhelper executable
 This works from Windows 10 (10240) to **Unfixed**
 
 ### Full code at WinPwnage project:
-[https://github.com/rootm0s/WinPwnage/blob/master/winpwnage/functions/uac/uac_fodhelper.py](https://github.com/rootm0s/WinPwnage/blob/master/winpwnage/functions/uac/uac_fodhelper.py)
+[https://github.com/rootm0s/WinPwnage/blob/master/winpwnage/functions/uac/uacMethod2.py](https://github.com/rootm0s/WinPwnage/blob/master/winpwnage/functions/uac/uacMethod2.py)
 
 ### WinPwnage usage:
 `python winpwnage.py --use uac --id 2 --payload c:\\windows\\system32\\cmd.exe`
